@@ -156,7 +156,7 @@ export default function LandingPage() {
             {/* Browser Preview Section */}
             <div className="w-full max-w-6xl px-8 pt-[5rem] flex justify-center">
               <Safari
-                url="prep.meredith.com"
+                url="demo.meriedith.com"
                 imageSrc="/screenshot.png"
                 width={1203}
                 height={753}
@@ -190,7 +190,7 @@ export default function LandingPage() {
             {/* Code Preview Section */}
             <div className="w-full max-w-6xl px-8 pt-[5rem] flex justify-center">
               <Safari
-                url="code.meredith.com"
+                url="demo.meredith.com"
                 imageSrc="/code.png"
                 width={1203}
                 height={800}
