@@ -11,7 +11,6 @@ import { AnimatedGradientText } from '@/components/magicui/animated-gradient-tex
 import { ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { WordRotate } from '@/components/magicui/word-rotate';
-import { useUser } from '@auth0/nextjs-auth0/client';
 import Link from 'next/link';
 import { UserMenu } from './components/UserMenu';
 
@@ -32,7 +31,6 @@ const GradientText = ({ children, className, onClick }: GradientTextProps) => (
 
 export default function LandingPage() {
   const router = useRouter();
-  const { user, isLoading } = useUser();
 
   const words = [
     // First line

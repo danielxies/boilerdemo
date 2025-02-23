@@ -112,6 +112,10 @@ export default function Dialpad() {
         )}
       </div>
 
+      <div className={`${vastago.className} text-center text-sm text-[#666666] -mt-6 mb-6`}>
+        For demo purposes, <GradientText>one minute</GradientText> calls are most <GradientText>optimal</GradientText>
+      </div>
+
       <div className="grid grid-cols-3 gap-3 mb-6">
         {dialPad.map((num) => (
           <Button

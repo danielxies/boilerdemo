@@ -12,7 +12,7 @@ export default function DemoPage() {
             Demo
           </h1>
           <a 
-            href="https://youtube.com" 
+            href="https://www.youtube.com/watch?v=CjdifVoywUM" 
             target="_blank" 
             rel="noopener noreferrer"
             className={`${vastago.className} text-rose-400 text-2xl hover:text-rose-300 hover:underline transition-all`}

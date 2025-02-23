@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useParams } from "next/navigation";
-import { useUser } from '@auth0/nextjs-auth0/client';
 import questionsData from "@/data/questions.json";
 import DanielsEditor from "@/components/custom/DanielsEditor";
 
@@ -19,14 +18,9 @@ interface Question {
 }
 
 const QuestionPage: React.FC = () => {
-    const { user, error, isLoading } = useUser();
     const params = useParams();
     const slug = params?.slug as string;
     const questionData = questionsData[slug as keyof typeof questionsData];
-
-    if (isLoading) return <div className="min-h-screen bg-[#1a1a1a] pt-16 text-white">Loading...</div>;
-    if (error) return <div className="min-h-screen bg-[#1a1a1a] pt-16 text-white">Error: {error.message}</div>;
-    if (!user) return <div className="min-h-screen bg-[#1a1a1a] pt-16 text-white">Please log in to access this page.</div>;
 
     if (!questionData) {
         console.error(`Question data not found for slug: ${slug}`);
